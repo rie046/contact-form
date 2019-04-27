@@ -1,0 +1,183 @@
+header {
+    text-align: center;
+    font-family: "Avenir Next";
+    color: white;
+}
+
+body {
+    font-family: "Avenir Next";
+    background-color: #bee7e1;
+    height: auto;
+}
+
+input {
+    width: 380px;
+    height:10px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #ced0a1;
+    border-radius: 10px;
+    background-color: #f8f4eb;
+}
+
+textarea {
+    width: 830px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid #ced0a1;
+    border-radius: 10px;
+    background-color: #f8f4eb;
+    resize: none;
+}
+
+/***********placeholder内font指定***********/
+
+::-webkit-input-placeholder{
+    font-family: "Avenir Next",  sans-serif;
+}
+
+:-moz-placeholder {
+    font-family: "Avenir Next",  sans-serif;
+}
+
+/************エアメール風に枠を付ける************/
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    margin:0 auto;
+    background-color: white;
+    width:1000px;
+    height: 800px;
+    background-image:repeating-linear-gradient(135deg, #F29B91 0px, #F09290 30px, transparent 30px, transparent 50px, #83B3DB 50px, #84ADCB 80px, transparent 80px, transparent 100px);
+    padding: 23px;
+}
+
+.main .wrap {
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap{
+    width:700px;
+    height:500px;
+    padding:70px;
+}
+
+/***************切手area***************/
+
+.stamp_area {
+    float: right;
+    position: relative;
+}
+
+p.stamp img {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-top:0;
+}
+
+.postmark {
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    margin: 0;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border: 5px double #430;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #430;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    line-height: 100px;
+    -webkit-transform: rotate(-16deg);
+    -ms-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+}
+
+.postmark:before {
+    position: absolute;
+    top: 14%;
+    display: block;
+    padding: 0 0 8px;
+    width: 82%;
+    border-bottom: 1px solid #430;
+    content: 'Posted at :';
+    font-size: 16px;
+    line-height: 1;
+}
+
+.postmark:after {
+    position: absolute;
+    bottom: 16%;
+    display: block;
+    padding: 6px 0 0;
+    width: 82%;
+    border-top: 1px solid #430;
+    content: 'from TOKYO';
+    font-size: 13px;
+    line-height: 1;
+}
+
+.postmark .time{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    font-size:18px;
+}
+
+/***************ここまで切手area***************/
+
+/*************sendボタンを右寄せ*************/
+
+.send_btn {
+    float: right;
+    padding: 5px 10px;
+    background-color: #30c8d6;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px #23a4b0;
+    border: 1px solid #23a4b0;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    margin-left: 30px;;;
+}
+
+.send_btn:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+/********************flexbox********************/
+
+.input_area01{
+    padding-bottom: 20px;
+}
+.input_area0203{
+    width: 820px;
+    display:flex;
+    justify-content: space-between;
+    padding-top:20px;
+}
+
+.input_area04{
+    width:820px;
+}
